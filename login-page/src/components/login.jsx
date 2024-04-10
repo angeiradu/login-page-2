@@ -11,7 +11,7 @@ import Connect from '../assets/connect.png'
 const login = () => {
   return (
     <div className='bg-[#d5dbe1] p-3 lg:p-[25px] xl:p-[25px] md:p-[25px]'>
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 gap-2'>
+        <div className='grid grid-cols-1  xl:grid-cols-2 lg:grid-cols-2 gap-2'>
             <div className='bg-[#ffffff] md:rounded-l-[10px] lg:rounded-l-[10px] xl:rounded-l-[10px] w-full p-[10px] lg:p-[120px] xl:p-[120px]'>
               <div className='flex gap-2 text-blue-600 font-bold'>
                 <div className='pt-1'><SiBackbonedotjs /></div>
@@ -20,14 +20,14 @@ const login = () => {
               <h1 className='pt-4 font-bold text-xl'>Login in to your Account</h1>
               <p className='text-[#7d818c] text-sm pt-4 pb-10'>Welcome back! Select method to login:</p>
 
-              <div className='flex gap-4'>
-              <div className='flex  gap-2 w-full bg-white text-gray-800 font-semibold py-2 px-8  border border-gray-400 rounded shadow" '>
+              <div className='flex gap-4 '>
+              <div className='flex justify-center gap-2 w-full bg-white text-gray-800 font-semibold py-2 px-8  border border-gray-400 rounded shadow" '>
                   <div className='pt-1'><FaGoogle /></div>
                   <button >
                     Google
                   </button>
               </div>
-              <div className='flex  gap-2 w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8  border border-gray-400 rounded shadow" '>
+              <div className='flex justify-center  gap-2 w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8  border border-gray-400 rounded shadow" '>
                   <div className='pt-1  text-blue-600'><FaFacebook /></div>
                   <button >
                     Facebook
@@ -47,14 +47,14 @@ const login = () => {
             </div>
 
             <div className='pt-5'>
-            <div className='flex gap-2 w-full hover:bg-gray-100 text-[#808ea5] font-semibold py-1 px-5  border border-gray-400 rounded shadow" '>
+              <div className='flex gap-2 justify-between w-full hover:bg-gray-100 text-[#808ea5] font-semibold py-1 px-5  border border-gray-400 rounded shadow" '>
                   <div className='pt-1 '><RiLockPasswordLine /></div>
-                  <input type='text' name='email' placeholder='Password' />
+                  <input className='w-full' type='text' name='email' placeholder='Password' />
                   <div className='text-left pt-1'><FaRegEyeSlash /></div>
+              </div>
             </div>
             </div>
-            </div>
-            <div className='flex gap-20 pb-10 pt-3 '>
+            <div className='flex justify-between pb-10 pt-3 '>
               <div className='flex gap-2'>
                 <div className='text-[#065ad8]'>
                 <FaCheckSquare />
@@ -77,6 +77,11 @@ const login = () => {
               <div className='pt-[95px]'>
                   <h2 className='text-xl font-bold text-white'>Connect with every Application</h2>
                   <p className='text-white'>Everything you need in an easyily customizable dashboard.</p>
+              </div>
+              <div className='flex gap-2 justify-center pt-9'>
+                <div className='bg-white rounded-full h-2 w-2'></div>
+                <div className='bg-gray-400 rounded-full h-2 w-2'></div>
+                <div className='bg-gray-400 rounded-full h-2 w-2'></div>
               </div>
             </div>
         </div>
